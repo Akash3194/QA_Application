@@ -54,7 +54,7 @@ class DocumentIngestionAPI(BasePostApi):
         elif file.content_type == "text/plain":
             time.sleep(2)  # Adding time.sleep here because, method to vectorize it is not added
         else:
-            raise ValueError("Unsupported file type")
+            raise ValueError("Unsupported file type. Provide .txt file.")
 
         return "Some mock content."
 
